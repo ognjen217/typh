@@ -1,0 +1,301 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14342","test_rectifier[0.0001-0.01-0.01]","","Tue May 27 16:23:39 CEST 2025","passed","Tue May 27 16:23:53 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","13336","test_rectifier[0.0001-1e-05-0.01]","","Tue May 27 16:37:22 CEST 2025","passed","Tue May 27 16:37:35 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14149","test_rectifier[1e-06-0.001-0.01]","","Tue May 27 16:35:58 CEST 2025","passed","Tue May 27 16:36:12 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14350","test_rectifier[1e-05-1e-05-0.01]","","Tue May 27 16:39:27 CEST 2025","passed","Tue May 27 16:39:42 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","15345","test_rectifier[1e-06-1e-05-1e-06]","","Tue May 27 17:04:52 CEST 2025","passed","Tue May 27 17:05:07 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","15358","test_rectifier[1e-06-0.001-0.0001]","","Tue May 27 16:50:59 CEST 2025","passed","Tue May 27 16:51:14 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14358","test_rectifier[0.001-0.01-0.0001]","","Tue May 27 16:26:02 CEST 2025","passed","Tue May 27 16:26:16 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14349","test_rectifier[1e-06-1e-05-0.001]","","Tue May 27 16:56:14 CEST 2025","passed","Tue May 27 16:56:28 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","9330","test_rectifier[1e-06-0.001-0.001]","","Tue May 27 16:18:22 CEST 2025","passed","Tue May 27 16:18:31 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","10364","test_rectifier[0.0001-0.0001-0.0001]","","Tue May 27 16:14:26 CEST 2025","passed","Tue May 27 16:14:36 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14340","test_rectifier[1e-06-0.0001-1e-06]","","Tue May 27 17:02:08 CEST 2025","passed","Tue May 27 17:02:23 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14340","test_rectifier[0.0001-0.001-0.01]","","Tue May 27 16:34:46 CEST 2025","passed","Tue May 27 16:35:00 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","15345","test_rectifier[1e-05-1e-06-0.0001]","","Tue May 27 16:12:29 CEST 2025","passed","Tue May 27 16:12:45 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14342","test_rectifier[1e-06-0.01-1e-05]","","Tue May 27 16:33:36 CEST 2025","passed","Tue May 27 16:33:50 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14343","test_rectifier[0.001-0.0001-0.001]","","Tue May 27 16:41:39 CEST 2025","passed","Tue May 27 16:41:54 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14341","test_rectifier[1e-05-0.0001-1e-06]","","Tue May 27 17:01:09 CEST 2025","passed","Tue May 27 17:01:24 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14337","test_rectifier[1e-05-0.0001-1e-05]","","Tue May 27 17:00:40 CEST 2025","passed","Tue May 27 17:00:54 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14341","test_rectifier[0.001-1e-06-0.01]","","Tue May 27 16:22:27 CEST 2025","passed","Tue May 27 16:22:42 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14340","test_rectifier[0.0001-1e-05-1e-06]","","Tue May 27 16:59:11 CEST 2025","passed","Tue May 27 16:59:25 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14341","test_rectifier[0.001-0.0001-1e-06]","","Tue May 27 16:44:46 CEST 2025","passed","Tue May 27 16:45:00 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14341","test_rectifier[1e-06-0.0001-1e-05]","","Tue May 27 17:01:39 CEST 2025","passed","Tue May 27 17:01:53 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14342","test_rectifier[1e-05-1e-06-0.001]","","Tue May 27 16:55:44 CEST 2025","passed","Tue May 27 16:55:58 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14341","test_rectifier[1e-06-0.01-0.0001]","","Tue May 27 16:31:56 CEST 2025","passed","Tue May 27 16:32:11 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","15347","test_rectifier[1e-05-1e-05-1e-06]","","Tue May 27 16:11:16 CEST 2025","passed","Tue May 27 16:11:32 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","10337","test_rectifier[0.0001-0.0001-1e-06]","","Tue May 27 16:15:29 CEST 2025","passed","Tue May 27 16:15:40 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14345","test_rectifier[1e-06-0.0001-0.01]","","Tue May 27 16:38:45 CEST 2025","passed","Tue May 27 16:39:00 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","15362","test_rectifier[1e-05-0.0001-0.0001]","","Tue May 27 16:13:13 CEST 2025","passed","Tue May 27 16:13:28 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14343","test_rectifier[0.0001-1e-05-1e-05]","","Tue May 27 16:58:41 CEST 2025","passed","Tue May 27 16:58:55 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14334","test_rectifier[0.0001-1e-06-0.0001]","","Tue May 27 16:57:58 CEST 2025","passed","Tue May 27 16:58:12 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","9357","test_rectifier[0.001-0.001-1e-06]","","Tue May 27 16:20:20 CEST 2025","passed","Tue May 27 16:20:29 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14344","test_rectifier[1e-05-0.01-1e-06]","","Tue May 27 16:33:06 CEST 2025","passed","Tue May 27 16:33:21 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","15356","test_rectifier[1e-05-1e-06-1e-05]","","Tue May 27 17:03:51 CEST 2025","passed","Tue May 27 17:04:06 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","10351","test_rectifier[0.001-1e-05-0.01]","","Tue May 27 16:22:02 CEST 2025","passed","Tue May 27 16:22:12 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14352","test_rectifier[1e-06-0.001-1e-05]","","Tue May 27 16:52:47 CEST 2025","passed","Tue May 27 16:53:01 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","9331","test_rectifier[0.001-0.001-0.01]","","Tue May 27 16:20:44 CEST 2025","passed","Tue May 27 16:20:53 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14351","test_rectifier[0.001-0.01-0.01]","","Tue May 27 16:22:56 CEST 2025","passed","Tue May 27 16:23:11 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14344","test_rectifier[0.0001-0.01-1e-05]","","Tue May 27 16:30:31 CEST 2025","passed","Tue May 27 16:30:45 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14348","test_rectifier[1e-06-0.01-0.001]","","Tue May 27 16:29:08 CEST 2025","passed","Tue May 27 16:29:22 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14347","test_rectifier[1e-05-0.01-0.0001]","","Tue May 27 16:31:28 CEST 2025","passed","Tue May 27 16:31:42 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","13355","test_rectifier[1e-05-0.0001-0.01]","","Tue May 27 16:38:17 CEST 2025","passed","Tue May 27 16:38:31 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14346","test_rectifier[1e-05-1e-05-0.001]","","Tue May 27 16:55:14 CEST 2025","passed","Tue May 27 16:55:28 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14352","test_rectifier[1e-05-0.001-1e-05]","","Tue May 27 16:51:44 CEST 2025","passed","Tue May 27 16:51:58 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14345","test_rectifier[1e-06-1e-06-0.01]","","Tue May 27 16:40:54 CEST 2025","passed","Tue May 27 16:41:08 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","16356","test_rectifier[1e-06-1e-06-1e-05]","","Tue May 27 16:09:42 CEST 2025","passed","Tue May 27 16:09:59 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","13345","test_rectifier[1e-05-0.01-1e-05]","","Tue May 27 16:32:39 CEST 2025","passed","Tue May 27 16:32:52 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14349","test_rectifier[0.001-1e-05-0.001]","","Tue May 27 16:42:24 CEST 2025","passed","Tue May 27 16:42:38 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14359","test_rectifier[0.001-1e-06-1e-05]","","Tue May 27 16:47:30 CEST 2025","passed","Tue May 27 16:47:44 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","15349","test_rectifier[0.001-1e-06-1e-06]","","Tue May 27 16:48:00 CEST 2025","passed","Tue May 27 16:48:15 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14351","test_rectifier[0.0001-1e-05-0.0001]","","Tue May 27 16:57:28 CEST 2025","passed","Tue May 27 16:57:42 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","13338","test_rectifier[0.0001-1e-06-0.01]","","Tue May 27 16:37:49 CEST 2025","passed","Tue May 27 16:38:03 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14345","test_rectifier[0.001-0.01-1e-05]","","Tue May 27 16:26:43 CEST 2025","passed","Tue May 27 16:26:58 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14347","test_rectifier[1e-06-1e-05-0.0001]","","Tue May 27 17:02:38 CEST 2025","passed","Tue May 27 17:02:52 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14343","test_rectifier[1e-05-0.0001-0.001]","","Tue May 27 16:54:01 CEST 2025","passed","Tue May 27 16:54:15 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14344","test_rectifier[1e-06-0.0001-0.001]","","Tue May 27 16:54:30 CEST 2025","passed","Tue May 27 16:54:45 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","15335","test_rectifier[1e-05-1e-05-0.0001]","","Tue May 27 16:11:59 CEST 2025","passed","Tue May 27 16:12:14 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14343","test_rectifier[0.001-1e-05-0.0001]","","Tue May 27 16:45:15 CEST 2025","passed","Tue May 27 16:45:30 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","9327","test_rectifier[0.001-0.001-0.001]","","Tue May 27 16:18:45 CEST 2025","passed","Tue May 27 16:18:54 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","9336","test_rectifier[0.0001-1e-05-0.001]","","Tue May 27 16:16:34 CEST 2025","passed","Tue May 27 16:16:43 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14348","test_rectifier[0.0001-1e-06-1e-06]","","Tue May 27 17:00:10 CEST 2025","passed","Tue May 27 17:00:25 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14352","test_rectifier[0.0001-0.01-0.0001]","","Tue May 27 16:29:49 CEST 2025","passed","Tue May 27 16:30:04 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14350","test_rectifier[0.001-1e-05-1e-06]","","Tue May 27 16:47:00 CEST 2025","passed","Tue May 27 16:47:14 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14341","test_rectifier[0.001-0.01-1e-06]","","Tue May 27 16:27:12 CEST 2025","passed","Tue May 27 16:27:27 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14344","test_rectifier[0.0001-0.001-1e-06]","","Tue May 27 16:50:00 CEST 2025","passed","Tue May 27 16:50:14 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","9330","test_rectifier[0.001-0.001-0.0001]","","Tue May 27 16:19:20 CEST 2025","passed","Tue May 27 16:19:30 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","15348","test_rectifier[1e-05-1e-06-1e-06]","","Tue May 27 17:04:21 CEST 2025","passed","Tue May 27 17:04:37 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","15351","test_rectifier[0.0001-0.001-0.0001]","","Tue May 27 16:48:45 CEST 2025","passed","Tue May 27 16:49:00 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14347","test_rectifier[1e-05-0.001-1e-06]","","Tue May 27 16:52:17 CEST 2025","passed","Tue May 27 16:52:31 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","9331","test_rectifier[0.001-0.001-1e-05]","","Tue May 27 16:19:57 CEST 2025","passed","Tue May 27 16:20:06 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14351","test_rectifier[1e-06-0.0001-0.0001]","","Tue May 27 16:13:43 CEST 2025","passed","Tue May 27 16:13:57 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14344","test_rectifier[1e-05-0.001-0.01]","","Tue May 27 16:35:28 CEST 2025","passed","Tue May 27 16:35:43 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14344","test_rectifier[0.0001-1e-06-1e-05]","","Tue May 27 16:59:41 CEST 2025","passed","Tue May 27 16:59:55 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14345","test_rectifier[0.001-0.0001-0.0001]","","Tue May 27 16:43:34 CEST 2025","passed","Tue May 27 16:43:49 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","9341","test_rectifier[0.0001-0.001-0.001]","","Tue May 27 16:17:21 CEST 2025","passed","Tue May 27 16:17:30 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","9338","test_rectifier[0.001-0.0001-0.01]","","Tue May 27 16:21:22 CEST 2025","passed","Tue May 27 16:21:31 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14342","test_rectifier[0.001-1e-05-1e-05]","","Tue May 27 16:46:30 CEST 2025","passed","Tue May 27 16:46:44 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","13341","test_rectifier[0.0001-0.0001-0.01]","","Tue May 27 16:36:42 CEST 2025","passed","Tue May 27 16:36:55 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14345","test_rectifier[0.001-1e-06-0.0001]","","Tue May 27 16:45:45 CEST 2025","passed","Tue May 27 16:46:00 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","11335","test_rectifier[1e-06-1e-06-1e-06]","","Tue May 27 16:09:16 CEST 2025","passed","Tue May 27 16:09:27 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","9334","test_rectifier[1e-05-0.001-0.001]","","Tue May 27 16:17:58 CEST 2025","passed","Tue May 27 16:18:08 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","15352","test_rectifier[1e-06-1e-06-0.001]","","Tue May 27 16:56:43 CEST 2025","passed","Tue May 27 16:56:59 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14332","test_rectifier[1e-06-1e-06-0.0001]","","Tue May 27 17:03:08 CEST 2025","passed","Tue May 27 17:03:22 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14351","test_rectifier[1e-06-0.01-0.01]","","Tue May 27 16:24:49 CEST 2025","passed","Tue May 27 16:25:04 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14350","test_rectifier[0.0001-0.001-1e-05]","","Tue May 27 16:49:30 CEST 2025","passed","Tue May 27 16:49:44 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14346","test_rectifier[1e-06-0.001-1e-06]","","Tue May 27 16:53:17 CEST 2025","passed","Tue May 27 16:53:31 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14347","test_rectifier[1e-06-1e-05-0.01]","","Tue May 27 16:40:25 CEST 2025","passed","Tue May 27 16:40:39 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","13341","test_rectifier[1e-06-0.01-1e-06]","","Tue May 27 16:34:05 CEST 2025","passed","Tue May 27 16:34:18 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","9336","test_rectifier[0.0001-0.0001-0.001]","","Tue May 27 16:15:55 CEST 2025","passed","Tue May 27 16:16:04 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14346","test_rectifier[1e-05-0.001-0.0001]","","Tue May 27 16:50:29 CEST 2025","passed","Tue May 27 16:50:44 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14368","test_rectifier[0.001-1e-06-0.001]","","Tue May 27 16:42:52 CEST 2025","passed","Tue May 27 16:43:07 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14341","test_rectifier[0.001-0.01-0.001]","","Tue May 27 16:25:19 CEST 2025","passed","Tue May 27 16:25:33 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14349","test_rectifier[1e-05-1e-06-0.01]","","Tue May 27 16:39:56 CEST 2025","passed","Tue May 27 16:40:11 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14348","test_rectifier[1e-05-0.01-0.001]","","Tue May 27 16:28:39 CEST 2025","passed","Tue May 27 16:28:53 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","9339","test_rectifier[0.0001-1e-06-0.001]","","Tue May 27 16:16:58 CEST 2025","passed","Tue May 27 16:17:07 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14349","test_rectifier[0.001-0.0001-1e-05]","","Tue May 27 16:44:17 CEST 2025","passed","Tue May 27 16:44:31 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14349","test_rectifier[1e-05-0.01-0.01]","","Tue May 27 16:24:20 CEST 2025","passed","Tue May 27 16:24:34 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","15341","test_rectifier[1e-05-1e-05-1e-05]","","Tue May 27 16:10:46 CEST 2025","passed","Tue May 27 16:11:02 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","14345","test_rectifier[0.0001-0.01-0.001]","","Tue May 27 16:27:55 CEST 2025","passed","Tue May 27 16:28:10 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","10352","test_rectifier[0.0001-0.0001-1e-05]","","Tue May 27 16:15:04 CEST 2025","passed","Tue May 27 16:15:14 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","15352","test_rectifier[1e-06-1e-05-1e-05]","","Tue May 27 16:10:16 CEST 2025","passed","Tue May 27 16:10:31 CEST 2025","","genResScript","",""
+"
+    Test the system response for disturbance rejection with different R and C values.
+    ","13343","test_rectifier[0.0001-0.01-1e-06]","","Tue May 27 16:30:59 CEST 2025","passed","Tue May 27 16:31:13 CEST 2025","","genResScript","",""

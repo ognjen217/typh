@@ -1,0 +1,1035 @@
+
+<model_description>
+    <sw_version>2025.1 SP1</sw_version>
+    <hw_properties>
+        <revision>3</revision>
+        <product_id>HIL604</product_id>
+        <configuration_id>1</configuration_id>
+        <device_ao_limit_enable>False</device_ao_limit_enable>
+        <device_id>0</device_id>
+        <spc_out_mem_size>512</spc_out_mem_size>
+        <fw_support_limit>132710918</fw_support_limit>
+        <vhil_adio_loopback>False</vhil_adio_loopback>
+    </hw_properties>
+    <sim_setup>
+        <sim_time_step>5e-07</sim_time_step>
+    </sim_setup>
+    <pesb>
+        <cell>
+            <name>Inv1</name>
+            <type>regular_conv</type>
+            <scm_comp_type>igbt_leg</scm_comp_type>
+            <site>0</site>
+            <switches>
+                <cell>
+                    <name>Sa_top</name>
+                    <weights>[1]</weights>
+                </cell>
+                <cell>
+                    <name>Sa_bot</name>
+                    <weights>[0]</weights>
+                </cell>
+                <cell>
+                    <name>Sb_top</name>
+                    <weights>[7]</weights>
+                </cell>
+                <cell>
+                    <name>Sb_bot</name>
+                    <weights>[6]</weights>
+                </cell>
+                <cell>
+                    <name>Sc_top</name>
+                    <weights>[13]</weights>
+                </cell>
+                <cell>
+                    <name>Sc_bot</name>
+                    <weights>[12]</weights>
+                </cell>
+            </switches>
+        </cell>
+    </pesb>
+    <analog_variables>
+        <cell>
+            <name>Lb</name>
+            <address>3</address>
+            <type>current</type>
+            <initial_condition>0.0</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Ca</name>
+            <address>0</address>
+            <type>voltage</type>
+            <initial_condition>0.0</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Cc</name>
+            <address>2</address>
+            <type>voltage</type>
+            <initial_condition>0.0</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Lc</name>
+            <address>5</address>
+            <type>current</type>
+            <initial_condition>0.0</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Lcg</name>
+            <address>6</address>
+            <type>current</type>
+            <initial_condition>0.0</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Cb</name>
+            <address>1</address>
+            <type>voltage</type>
+            <initial_condition>0.0</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Lbg</name>
+            <address>4</address>
+            <type>current</type>
+            <initial_condition>0.0</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Inv1.Phase B.IGBT Leg global gds ovs.v1</name>
+            <address>393</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>False</visible>
+            <previous_names>
+            </previous_names>
+        </cell>
+        <cell>
+            <name>Ia</name>
+            <address>7</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+            <previous_names>
+            </previous_names>
+        </cell>
+        <cell>
+            <name>Ib</name>
+            <address>8</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+            <previous_names>
+            </previous_names>
+        </cell>
+        <cell>
+            <name>Inv1.Phase A.IGBT Leg global gds ovs.v1</name>
+            <address>385</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>False</visible>
+            <previous_names>
+            </previous_names>
+        </cell>
+        <cell>
+            <name>Ic</name>
+            <address>9</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+            <previous_names>
+            </previous_names>
+        </cell>
+        <cell>
+            <name>Inv1.Phase B.IGBT Leg global gds ovs.il</name>
+            <address>392</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>False</visible>
+            <previous_names>
+            </previous_names>
+        </cell>
+        <cell>
+            <name>Inv1.Phase C.IGBT Leg global gds ovs.il</name>
+            <address>400</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>False</visible>
+            <previous_names>
+            </previous_names>
+        </cell>
+        <cell>
+            <name>Inv1.Phase B.IGBT Leg global gds ovs.v2</name>
+            <address>394</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>False</visible>
+            <previous_names>
+            </previous_names>
+        </cell>
+        <cell>
+            <name>Inv1.Phase A.IGBT Leg global gds ovs.v2</name>
+            <address>386</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>False</visible>
+            <previous_names>
+            </previous_names>
+        </cell>
+        <cell>
+            <name>Inv1.Phase A.IGBT Leg global gds ovs.il</name>
+            <address>384</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>False</visible>
+            <previous_names>
+            </previous_names>
+        </cell>
+        <cell>
+            <name>Inv1.Phase C.IGBT Leg global gds ovs.v2</name>
+            <address>402</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>False</visible>
+            <previous_names>
+            </previous_names>
+        </cell>
+        <cell>
+            <name>Inv1.Phase C.IGBT Leg global gds ovs.v1</name>
+            <address>401</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>False</visible>
+            <previous_names>
+            </previous_names>
+        </cell>
+        <cell>
+            <name>Vin</name>
+            <address>33280</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>const_0V</name>
+            <address>34304</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 1</name>
+            <address>34816</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 2</name>
+            <address>34817</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 3</name>
+            <address>34818</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 4</name>
+            <address>34819</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 5</name>
+            <address>34820</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 6</name>
+            <address>34821</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 7</name>
+            <address>34822</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 8</name>
+            <address>34823</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 9</name>
+            <address>34824</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 10</name>
+            <address>34825</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 11</name>
+            <address>34826</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 12</name>
+            <address>34827</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 13</name>
+            <address>34828</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 14</name>
+            <address>34829</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 15</name>
+            <address>34830</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 16</name>
+            <address>34831</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 17</name>
+            <address>34832</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 18</name>
+            <address>34833</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 19</name>
+            <address>34834</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 20</name>
+            <address>34835</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 21</name>
+            <address>34836</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 22</name>
+            <address>34837</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 23</name>
+            <address>34838</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 24</name>
+            <address>34839</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 25</name>
+            <address>34840</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 26</name>
+            <address>34841</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 27</name>
+            <address>34842</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 28</name>
+            <address>34843</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 29</name>
+            <address>34844</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 30</name>
+            <address>34845</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 31</name>
+            <address>34846</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>HIL0 analog input 32</name>
+            <address>34847</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+    </analog_variables>
+    <digital_variables>
+        <cell>
+            <name>const_0</name>
+            <address>1</address>
+            </cell>
+        <cell>
+            <name>HIL0 AO flag</name>
+            <address>8</address>
+            </cell>
+        <cell>
+            <name>HIL0 DTV flag</name>
+            <address>9</address>
+            </cell>
+        <cell>
+            <name>HIL0 Capture or Scope Trigger</name>
+            <address>16</address>
+                <previous_names>
+                        <previous_name>HIL0 Capture/Scope Trigger</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>HIL0 Capture/Scope Trigger</name>
+            <address>16</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 1</name>
+            <address>128</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 2</name>
+            <address>129</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 3</name>
+            <address>130</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 4</name>
+            <address>131</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 5</name>
+            <address>132</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 6</name>
+            <address>133</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 7</name>
+            <address>134</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 8</name>
+            <address>135</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 9</name>
+            <address>136</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 10</name>
+            <address>137</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 11</name>
+            <address>138</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 12</name>
+            <address>139</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 13</name>
+            <address>140</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 14</name>
+            <address>141</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 15</name>
+            <address>142</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 16</name>
+            <address>143</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 17</name>
+            <address>144</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 18</name>
+            <address>145</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 19</name>
+            <address>146</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 20</name>
+            <address>147</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 21</name>
+            <address>148</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 22</name>
+            <address>149</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 23</name>
+            <address>150</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 24</name>
+            <address>151</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 25</name>
+            <address>152</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 26</name>
+            <address>153</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 27</name>
+            <address>154</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 28</name>
+            <address>155</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 29</name>
+            <address>156</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 30</name>
+            <address>157</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 31</name>
+            <address>158</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 32</name>
+            <address>159</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 33</name>
+            <address>160</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 34</name>
+            <address>161</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 35</name>
+            <address>162</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 36</name>
+            <address>163</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 37</name>
+            <address>164</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 38</name>
+            <address>165</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 39</name>
+            <address>166</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 40</name>
+            <address>167</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 41</name>
+            <address>168</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 42</name>
+            <address>169</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 43</name>
+            <address>170</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 44</name>
+            <address>171</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 45</name>
+            <address>172</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 46</name>
+            <address>173</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 47</name>
+            <address>174</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 48</name>
+            <address>175</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 49</name>
+            <address>176</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 50</name>
+            <address>177</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 51</name>
+            <address>178</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 52</name>
+            <address>179</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 53</name>
+            <address>180</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 54</name>
+            <address>181</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 55</name>
+            <address>182</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 56</name>
+            <address>183</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 57</name>
+            <address>184</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 58</name>
+            <address>185</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 59</name>
+            <address>186</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 60</name>
+            <address>187</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 61</name>
+            <address>188</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 62</name>
+            <address>189</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 63</name>
+            <address>190</address>
+            </cell>
+        <cell>
+            <name>HIL0 digital input 64</name>
+            <address>191</address>
+            </cell>
+        <cell>
+            <name>Inv1.Sa_top</name>
+            <address>512</address>
+            </cell>
+        <cell>
+            <name>Inv1.Sa_bot</name>
+            <address>513</address>
+            </cell>
+        <cell>
+            <name>Inv1.Sb_bot</name>
+            <address>515</address>
+            </cell>
+        <cell>
+            <name>Inv1.Sb_top</name>
+            <address>514</address>
+            </cell>
+        <cell>
+            <name>Inv1.Sc_bot</name>
+            <address>517</address>
+            </cell>
+        <cell>
+            <name>Inv1.Sc_top</name>
+            <address>516</address>
+            </cell>
+        <cell>
+            <name>Inv1.Phase A.S1</name>
+            <address>512</address>
+                <previous_names>
+                        <previous_name>Inv1.Sa_top</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.Phase A.S2</name>
+            <address>513</address>
+                <previous_names>
+                        <previous_name>Inv1.Sa_bot</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.Phase B.S2</name>
+            <address>515</address>
+                <previous_names>
+                        <previous_name>Inv1.Sb_bot</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.Phase B.S1</name>
+            <address>514</address>
+                <previous_names>
+                        <previous_name>Inv1.Sb_top</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.Phase C.S2</name>
+            <address>517</address>
+                <previous_names>
+                        <previous_name>Inv1.Sc_bot</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.Phase C.S1</name>
+            <address>516</address>
+                <previous_names>
+                        <previous_name>Inv1.Sc_top</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.Phase C.PWM_Modulator.TOP_1</name>
+            <address>516</address>
+                <previous_names>
+                        <previous_name>Inv1.IGBT Leg3.PWM_Modulator_TOP_1</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.IGBT Leg3.PWM_Modulator_TOP_1</name>
+            <address>516</address>
+            </cell>
+        <cell>
+            <name>Inv1.Phase C.PWM_Modulator.BOT_1</name>
+            <address>517</address>
+                <previous_names>
+                        <previous_name>Inv1.IGBT Leg3.PWM_Modulator_BOT_1</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.IGBT Leg3.PWM_Modulator_BOT_1</name>
+            <address>517</address>
+            </cell>
+        <cell>
+            <name>Inv1.Phase A.PWM_Modulator.TOP_1</name>
+            <address>512</address>
+                <previous_names>
+                        <previous_name>Inv1.IGBT Leg1.PWM_Modulator_TOP_1</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.IGBT Leg1.PWM_Modulator_TOP_1</name>
+            <address>512</address>
+            </cell>
+        <cell>
+            <name>Inv1.Phase A.PWM_Modulator.BOT_1</name>
+            <address>513</address>
+                <previous_names>
+                        <previous_name>Inv1.IGBT Leg1.PWM_Modulator_BOT_1</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.IGBT Leg1.PWM_Modulator_BOT_1</name>
+            <address>513</address>
+            </cell>
+        <cell>
+            <name>Inv1.Phase B.PWM_Modulator.TOP_1</name>
+            <address>514</address>
+                <previous_names>
+                        <previous_name>Inv1.IGBT Leg2.PWM_Modulator_TOP_1</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.IGBT Leg2.PWM_Modulator_TOP_1</name>
+            <address>514</address>
+            </cell>
+        <cell>
+            <name>Inv1.Phase B.PWM_Modulator.BOT_1</name>
+            <address>515</address>
+                <previous_names>
+                        <previous_name>Inv1.IGBT Leg2.PWM_Modulator_BOT_1</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.IGBT Leg2.PWM_Modulator_BOT_1</name>
+            <address>515</address>
+            </cell>
+        <cell>
+            <name>Inv1.Phase A.vout_cmp</name>
+            <address>608</address>
+                <previous_names>
+                        <previous_name>Inv1.IGBT Leg1_vout_cmp</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.IGBT Leg1_vout_cmp</name>
+            <address>608</address>
+            </cell>
+        <cell>
+            <name>Inv1.Phase B.vout_cmp</name>
+            <address>609</address>
+                <previous_names>
+                        <previous_name>Inv1.IGBT Leg2_vout_cmp</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.IGBT Leg2_vout_cmp</name>
+            <address>609</address>
+            </cell>
+        <cell>
+            <name>Inv1.Phase C.vout_cmp</name>
+            <address>610</address>
+                <previous_names>
+                        <previous_name>Inv1.IGBT Leg3_vout_cmp</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.IGBT Leg3_vout_cmp</name>
+            <address>610</address>
+            </cell>
+        <cell>
+            <name>Inv1.Phase A.stf</name>
+            <address>1036</address>
+                <previous_names>
+                        <previous_name>Inv1.IGBT Leg1_stf</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.IGBT Leg1_stf</name>
+            <address>1036</address>
+            </cell>
+        <cell>
+            <name>Inv1.Phase B.stf</name>
+            <address>1037</address>
+                <previous_names>
+                        <previous_name>Inv1.IGBT Leg2_stf</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.IGBT Leg2_stf</name>
+            <address>1037</address>
+            </cell>
+        <cell>
+            <name>Inv1.Phase C.stf</name>
+            <address>1038</address>
+                <previous_names>
+                        <previous_name>Inv1.IGBT Leg3_stf</previous_name>
+                    </previous_names>
+            </cell>
+        <cell>
+            <name>Inv1.IGBT Leg3_stf</name>
+            <address>1038</address>
+            </cell>
+    </digital_variables>
+    <sources>
+        <cell>
+            <name>Vin</name>
+            <type>1phase</type>
+            <address>[0]</address>
+            <unit>V</unit>
+            <init_settings>['Constant', 500.0]</init_settings>
+        </cell>
+    </sources>
+    <machines>
+    </machines>
+    <pv_panels>
+    </pv_panels>
+    <batteries>
+    </batteries>
+    <contactors>
+    </contactors>
+    <dtsms>
+        </dtsms>
+    <analog_output_settings>
+    </analog_output_settings>
+    <digital_output_settings>
+    </digital_output_settings>
+    <dtv>
+        <spc_dtv>
+            <cell>
+                <address>0</address>
+                <fqn>Inv1.Phase A</fqn>
+            </cell>
+            <cell>
+                <address>1</address>
+                <fqn>Inv1.Phase B</fqn>
+            </cell>
+            <cell>
+                <address>2</address>
+                <fqn>Inv1.Phase C</fqn>
+            </cell>
+        </spc_dtv>
+        <par_dtv>
+        </par_dtv>
+    </dtv>
+
+<!-- ******* SP DATA ******** -->
+
+    <model_properties>
+        <execution_rates>[[[0.0001], [], []]]</execution_rates>
+        <sys_real_type_precision>float</sys_real_type_precision>
+        <user_real_type_precision>double</user_real_type_precision>
+        <sig_stim>off</sig_stim>
+        <update_device_time>True</update_device_time>
+    </model_properties>
+
+
+<digital_variables>
+    </digital_variables>
+
+    <tunable_params>
+        <tunable_param>
+            <name>Enable</name>
+            <addr>[339738624]</addr>
+            <min>0.0</min>
+            <max>1.0</max>
+            <def_value>1.0</def_value>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+            <size>1</size>
+            <param_type>scada input</param_type>
+            <cpu_type>user_sp_cpu</cpu_type>
+            <cpu_idx>0</cpu_idx>
+            <execution_rate>0.0001</execution_rate>
+            <visible>True</visible>
+        </tunable_param>
+        <tunable_param>
+            <name>RMS_PU</name>
+            <addr>[339738628]</addr>
+            <min>0.0</min>
+            <max>1.0</max>
+            <def_value>0.5</def_value>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+            <size>1</size>
+            <param_type>scada input</param_type>
+            <cpu_type>user_sp_cpu</cpu_type>
+            <cpu_idx>0</cpu_idx>
+            <execution_rate>0.0001</execution_rate>
+            <visible>True</visible>
+        </tunable_param>
+    </tunable_params>
+
+
+    <dsp_monitors>
+        <monitor>
+            <type>user</type>
+            <cpu_idx>0</cpu_idx>
+            <execution_rates>[0.0001]</execution_rates>
+            <execution_rate_labels>['ER0 (0.0001)']</execution_rate_labels>
+            <timer_counters>[15999]</timer_counters>
+
+            
+        </monitor>
+    </dsp_monitors>
+
+    <sp_compiler_type>gcc</sp_compiler_type>
+
+
+
+</model_description>

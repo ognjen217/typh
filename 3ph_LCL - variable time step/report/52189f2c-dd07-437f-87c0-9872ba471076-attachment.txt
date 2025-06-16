@@ -1,0 +1,78 @@
+2025-05-27 16:55:28,770         [Fixture] _L_values
+2025-05-27 16:55:28,770         [Fixture] setup_control
+2025-05-27 16:55:28,770             > Load
+2025-05-27 16:55:28,771                 ├- filename = WindowsPath('C:/Users/OgnjenPeric/Desktop/NN/3ph_inv_LCL/3ph_inv_lcl.tse')
+2025-05-27 16:55:28,771                 └- debug = True
+2025-05-27 16:55:33,642             > Set Component Property
+2025-05-27 16:55:33,642                 ├- component = 'Ca'
+2025-05-27 16:55:33,642                 ├- property = 'capacitance'
+2025-05-27 16:55:33,643                 └- value = 1e-05
+2025-05-27 16:55:33,646             > Set Component Property
+2025-05-27 16:55:33,646                 ├- component = 'Cc'
+2025-05-27 16:55:33,646                 ├- property = 'capacitance'
+2025-05-27 16:55:33,646                 └- value = 1e-05
+2025-05-27 16:55:33,650             > Set Component Property
+2025-05-27 16:55:33,650                 ├- component = 'Cb'
+2025-05-27 16:55:33,650                 ├- property = 'capacitance'
+2025-05-27 16:55:33,650                 └- value = 1e-05
+2025-05-27 16:55:33,654             > Set Component Property
+2025-05-27 16:55:33,654                 ├- component = 'La'
+2025-05-27 16:55:33,654                 ├- property = 'inductance'
+2025-05-27 16:55:33,654                 └- value = 1e-06
+2025-05-27 16:55:33,657             > Set Component Property
+2025-05-27 16:55:33,657                 ├- component = 'Lb'
+2025-05-27 16:55:33,658                 ├- property = 'inductance'
+2025-05-27 16:55:33,658                 └- value = 1e-06
+2025-05-27 16:55:33,661             > Set Component Property
+2025-05-27 16:55:33,661                 ├- component = 'Lc'
+2025-05-27 16:55:33,661                 ├- property = 'inductance'
+2025-05-27 16:55:33,661                 └- value = 1e-06
+2025-05-27 16:55:33,664             > Set Component Property
+2025-05-27 16:55:33,665                 ├- component = 'Lag'
+2025-05-27 16:55:33,665                 ├- property = 'inductance'
+2025-05-27 16:55:33,665                 └- value = 0.001
+2025-05-27 16:55:33,668             > Set Component Property
+2025-05-27 16:55:33,669                 ├- component = 'Lbg'
+2025-05-27 16:55:33,669                 ├- property = 'inductance'
+2025-05-27 16:55:33,669                 └- value = 0.001
+2025-05-27 16:55:33,672             > Set Component Property
+2025-05-27 16:55:33,672                 ├- component = 'Lcg'
+2025-05-27 16:55:33,672                 ├- property = 'inductance'
+2025-05-27 16:55:33,672                 └- value = 0.001
+2025-05-27 16:55:33,677             > Compile
+2025-05-27 16:55:33,677                 └- conditional_compile = True
+2025-05-27 16:55:33,713             > Load Model
+2025-05-27 16:55:33,713                 ├- file = 'C:\Users\OgnjenPeric\Desktop\NN\3ph_inv_LCL\3ph_inv_lcl Target files\3ph_inv_lcl.cpd'
+2025-05-27 16:55:33,713                 ├- offlineMode = False
+2025-05-27 16:55:33,713                 └- vhil_device = True
+2025-05-27 16:55:44,272         > Start Capture
+2025-05-27 16:55:44,272             ├- duration = 0.3
+2025-05-27 16:55:44,272             ├- offset_absolute = 0
+2025-05-27 16:55:44,272             ├- offset_relative = None
+2025-05-27 16:55:44,273             ├- rate = 'Max'
+2025-05-27 16:55:44,273             ├- signals = ['Ia', 'Ib', 'Ic', 'Inv1.Phase A.PWM_Modulator.TOP_1', 'Inv1.Phase B.PWM_Modulator.TOP_1', 'Inv1.Phase C.PWM_Modulator.TOP_1', 'Inv1.Phase A.PWM_Modulator.BOT_1', 'Inv1.Phase B.PWM_Modulator.BOT_1', 'Inv1.Phase C.PWM_Modulator.BOT_1']
+2025-05-27 16:55:44,273             ├- trigger_source = 'Forced'
+2025-05-27 16:55:44,273             ├- trigger_threshold = None
+2025-05-27 16:55:44,273             ├- trigger_edge = None
+2025-05-27 16:55:44,273             ├- trigger_use_first_occurence = True
+2025-05-27 16:55:44,273             ├- fileName = './3ph_inv_L=1e-05_C=1e-06_Lg=1e-03_.csv'
+2025-05-27 16:55:44,273             ├- executeAt = None
+2025-05-27 16:55:44,273             ├- timeout = None
+2025-05-27 16:55:44,274             └- absolute_time = False
+2025-05-27 16:55:44,291             > Trying to use the maximum possible sample rate (INFO, typhoon.test.capture.impl)
+2025-05-27 16:55:44,291             > Num. of Samples: 600000.0 Decimation: 1 Rate: 2000000.0 Duration: 0.3 (INFO, typhoon.test.capture.impl)
+2025-05-27 16:55:44,499         > Start Simulation
+2025-05-27 16:55:44,503         > Get Capture Results
+2025-05-27 16:55:44,503             ├- wait_capture = True
+2025-05-27 16:55:44,503             └- time_format = 'relative'
+2025-05-27 16:55:48,913             > Capture not in progress anymore. (INFO, typhoon.test.capture.impl)
+2025-05-27 16:55:58,229             [Attachment] Ia
+2025-05-27 16:55:58,231             [Attachment] Ib
+2025-05-27 16:55:58,232             [Attachment] Ic
+2025-05-27 16:55:58,234             [Attachment] Inv1.Phase A.PWM_Modulator.BOT_1
+2025-05-27 16:55:58,236             [Attachment] Inv1.Phase A.PWM_Modulator.TOP_1
+2025-05-27 16:55:58,238             [Attachment] Inv1.Phase B.PWM_Modulator.BOT_1
+2025-05-27 16:55:58,240             [Attachment] Inv1.Phase B.PWM_Modulator.TOP_1
+2025-05-27 16:55:58,242             [Attachment] Inv1.Phase C.PWM_Modulator.BOT_1
+2025-05-27 16:55:58,244             [Attachment] Inv1.Phase C.PWM_Modulator.TOP_1
+2025-05-27 16:55:58,244         > Stop Simulation

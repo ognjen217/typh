@@ -1,0 +1,315 @@
+// generated using template: cop_main.template---------------------------------------------
+/******************************************************************************************
+**
+**  Module Name: cop_main.c
+**  NOTE: Automatically generated file. DO NOT MODIFY!
+**  Description:
+**            Main file
+**
+******************************************************************************************/
+// generated using template: arm/custom_include.template-----------------------------------
+
+
+#ifdef __cplusplus
+#include <limits>
+
+extern "C" {
+#endif
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <math.h>
+#include <stdint.h>
+#include <complex.h>
+
+// x86 libraries:
+#include "../include/sp_functions_dev0.h"
+
+
+#ifdef __cplusplus
+}
+#endif
+
+
+// ----------------------------------------------------------------------------------------                // generated using template:generic_macros.template-----------------------------------------
+/*********************** Macros (Inline Functions) Definitions ***************************/
+
+// ----------------------------------------------------------------------------------------
+
+#ifndef MAX
+#define MAX(value, limit) (((value) > (limit)) ? (value) : (limit))
+#endif
+#ifndef MIN
+#define MIN(value, limit) (((value) < (limit)) ? (value) : (limit))
+#endif
+
+// generated using template: VirtualHIL/custom_defines.template----------------------------
+
+typedef unsigned char X_UnInt8;
+typedef char X_Int8;
+typedef signed short X_Int16;
+typedef unsigned short X_UnInt16;
+typedef int X_Int32;
+typedef unsigned int X_UnInt32;
+typedef unsigned int uint;
+typedef double real;
+
+// ----------------------------------------------------------------------------------------
+// generated using template: custom_consts.template----------------------------------------
+
+// arithmetic constants
+#define C_SQRT_2                    1.4142135623730950488016887242097f
+#define C_SQRT_3                    1.7320508075688772935274463415059f
+#define C_PI                        3.1415926535897932384626433832795f
+#define C_E                         2.7182818284590452353602874713527f
+#define C_2PI                       6.283185307179586476925286766559f
+
+//@cmp.def.start
+//component defines
+
+
+
+
+
+
+
+
+
+
+
+//@cmp.def.end
+
+
+//-----------------------------------------------------------------------------------------
+// generated using template: common_variables.template-------------------------------------
+// true global variables
+
+
+
+
+
+// const variables
+
+//@cmp.var.start
+// variables
+double _enable__out;
+double _rms_pu__out;
+double _sin__out[3];
+double _product1__out[3];
+double _bus_split__out;
+double _bus_split__out1;
+double _bus_split__out2;
+X_UnInt32 _inv1_phase_a_pwm_modulator__channels[1] = {0};
+double _inv1_phase_a_pwm_modulator__limited_in[1];
+
+X_UnInt32 _inv1_phase_b_pwm_modulator__channels[1] = {1};
+double _inv1_phase_b_pwm_modulator__limited_in[1];
+
+X_UnInt32 _inv1_phase_c_pwm_modulator__channels[1] = {2};
+double _inv1_phase_c_pwm_modulator__limited_in[1];
+
+//@cmp.var.end
+
+//@cmp.svar.start
+// state variables
+double _sin__current_phase[3];
+//@cmp.svar.end
+
+//
+// Tunable parameters
+//
+static struct Tunable_params {
+} __attribute__((__packed__)) tunable_params;
+
+void *tunable_params_dev0_cpu0_ptr = &tunable_params;
+
+// Dll function pointers
+#if defined(_WIN64)
+#else
+// Define handles for loading dlls
+#endif
+
+
+
+
+
+
+
+
+// generated using template: virtual_hil/custom_functions.template---------------------------------
+void ReInit_user_sp_cpu0_dev0() {
+#if DEBUG_MODE
+    printf("\n\rReInitTimer");
+#endif
+    //@cmp.init.block.start
+    _sin__current_phase[0] = 0.0 / 360.0f;
+    _sin__current_phase[1] = 240.0 / 360.0f;
+    _sin__current_phase[2] = 120.0 / 360.0f;
+    HIL_OutInt32(0x2000080 + _inv1_phase_a_pwm_modulator__channels[0], 8000);
+    HIL_OutInt32(0x20000c0 + _inv1_phase_a_pwm_modulator__channels[0], 160);
+    HIL_OutInt32(0x20001c0 + _inv1_phase_a_pwm_modulator__channels[0], 0);
+    HIL_OutInt32(0x2000200 + _inv1_phase_a_pwm_modulator__channels[0], 0);
+    HIL_OutInt32(0x2000240 + _inv1_phase_a_pwm_modulator__channels[0], 0);
+    HIL_OutInt32(0x2000300 + _inv1_phase_a_pwm_modulator__channels[0], 1);
+    HIL_OutInt32(0x2000340 + _inv1_phase_a_pwm_modulator__channels[0], 0);
+    HIL_OutInt32(0x2000140, 0x1);
+    HIL_OutInt32(0x2000080 + _inv1_phase_b_pwm_modulator__channels[0], 8000);
+    HIL_OutInt32(0x20000c0 + _inv1_phase_b_pwm_modulator__channels[0], 160);
+    HIL_OutInt32(0x20001c0 + _inv1_phase_b_pwm_modulator__channels[0], 0);
+    HIL_OutInt32(0x2000200 + _inv1_phase_b_pwm_modulator__channels[0], 0);
+    HIL_OutInt32(0x2000240 + _inv1_phase_b_pwm_modulator__channels[0], 0);
+    HIL_OutInt32(0x2000300 + _inv1_phase_b_pwm_modulator__channels[0], 1);
+    HIL_OutInt32(0x2000340 + _inv1_phase_b_pwm_modulator__channels[0], 0);
+    HIL_OutInt32(0x2000140, 0x2);
+    HIL_OutInt32(0x2000080 + _inv1_phase_c_pwm_modulator__channels[0], 8000);
+    HIL_OutInt32(0x20000c0 + _inv1_phase_c_pwm_modulator__channels[0], 160);
+    HIL_OutInt32(0x20001c0 + _inv1_phase_c_pwm_modulator__channels[0], 0);
+    HIL_OutInt32(0x2000200 + _inv1_phase_c_pwm_modulator__channels[0], 0);
+    HIL_OutInt32(0x2000240 + _inv1_phase_c_pwm_modulator__channels[0], 0);
+    HIL_OutInt32(0x2000300 + _inv1_phase_c_pwm_modulator__channels[0], 1);
+    HIL_OutInt32(0x2000340 + _inv1_phase_c_pwm_modulator__channels[0], 0);
+    HIL_OutInt32(0x2000140, 0x4);
+    //@cmp.init.block.end
+}
+
+
+// Dll function pointers and dll reload function
+#if defined(_WIN64)
+// Define method for reloading dll functions
+void ReloadDllFunctions_user_sp_cpu0_dev0(void) {
+    // Load each library and setup function pointers
+}
+
+void FreeDllFunctions_user_sp_cpu0_dev0(void) {
+}
+
+#else
+// Define method for reloading dll functions
+void ReloadDllFunctions_user_sp_cpu0_dev0(void) {
+    // Load each library and setup function pointers
+}
+
+void FreeDllFunctions_user_sp_cpu0_dev0(void) {
+}
+#endif
+
+void load_fmi_libraries_user_sp_cpu0_dev0(void) {
+#if defined(_WIN64)
+#else
+#endif
+}
+
+
+void ReInit_sp_scope_user_sp_cpu0_dev0() {
+    // initialise SP Scope buffer pointer
+}
+// generated using template: virtual_hil/common_timer_counter_handler.template-------------------------
+
+/*****************************************************************************************/
+/**
+* This function is the handler which performs processing for the timer counter.
+* It is called from an interrupt context such that the amount of processing
+* performed should be minimized.  It is called when the timer counter expires
+* if interrupts are enabled.
+*
+*
+* @param    None
+*
+* @return   None
+*
+* @note     None
+*
+*****************************************************************************************/
+
+void TimerCounterHandler_0_user_sp_cpu0_dev0() {
+#if DEBUG_MODE
+    printf("\n\rTimerCounterHandler_0");
+#endif
+    //////////////////////////////////////////////////////////////////////////
+    // Set tunable parameters
+    //////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+    // Output block
+    //////////////////////////////////////////////////////////////////////////
+    //@cmp.out.block.start
+    // Generated from the component: Enable
+    _enable__out = XIo_InFloat(0x14400000);
+    // Generated from the component: RMS_PU
+    _rms_pu__out = XIo_InFloat(0x14400004);
+    // Generated from the component: sin
+    _sin__out[0] = (1.0 * sin(2.0f * M_PI * _sin__current_phase[0]) + 0.0);
+    _sin__out[1] = (1.0 * sin(2.0f * M_PI * _sin__current_phase[1]) + 0.0);
+    _sin__out[2] = (1.0 * sin(2.0f * M_PI * _sin__current_phase[2]) + 0.0);
+    // Generated from the component: Inv1.Phase A.IGBT Leg global gds ovs.termination1
+    // Generated from the component: Inv1.Phase B.IGBT Leg global gds ovs.termination1
+    // Generated from the component: Inv1.Phase C.IGBT Leg global gds ovs.termination1
+    // Generated from the component: Product1
+    _product1__out[0] = (_sin__out[0]) * (_rms_pu__out);
+    _product1__out[1] = (_sin__out[1]) * (_rms_pu__out);
+    _product1__out[2] = (_sin__out[2]) * (_rms_pu__out);
+    // Generated from the component: Bus Split
+    _bus_split__out = _product1__out[0];
+    _bus_split__out1 = _product1__out[1];
+    _bus_split__out2 = _product1__out[2];
+    // Generated from the component: Inv1.Phase A.PWM_Modulator
+    _inv1_phase_a_pwm_modulator__limited_in[0] = MIN(MAX(_bus_split__out, -1.0), 1.0);
+    HIL_OutInt32(0x2000040 + _inv1_phase_a_pwm_modulator__channels[0], ((X_UnInt32)((_inv1_phase_a_pwm_modulator__limited_in[0] - (-1.0)) * 4000.0)));
+    if (_enable__out == 0x0) {
+        // pwm_modulator_en
+        HIL_OutInt32(0x2000000 + _inv1_phase_a_pwm_modulator__channels[0], 0x0);
+    }
+    else {
+        // pwm_modulator_en
+        HIL_OutInt32(0x2000000 + _inv1_phase_a_pwm_modulator__channels[0], 0x1);
+    }
+    // 1
+    HIL_OutInt32(0x2000140, 0x1);
+    // Generated from the component: Inv1.Phase B.PWM_Modulator
+    _inv1_phase_b_pwm_modulator__limited_in[0] = MIN(MAX(_bus_split__out1, -1.0), 1.0);
+    HIL_OutInt32(0x2000040 + _inv1_phase_b_pwm_modulator__channels[0], ((X_UnInt32)((_inv1_phase_b_pwm_modulator__limited_in[0] - (-1.0)) * 4000.0)));
+    if (_enable__out == 0x0) {
+        // pwm_modulator_en
+        HIL_OutInt32(0x2000000 + _inv1_phase_b_pwm_modulator__channels[0], 0x0);
+    }
+    else {
+        // pwm_modulator_en
+        HIL_OutInt32(0x2000000 + _inv1_phase_b_pwm_modulator__channels[0], 0x1);
+    }
+    // 1
+    HIL_OutInt32(0x2000140, 0x2);
+    // Generated from the component: Inv1.Phase C.PWM_Modulator
+    _inv1_phase_c_pwm_modulator__limited_in[0] = MIN(MAX(_bus_split__out2, -1.0), 1.0);
+    HIL_OutInt32(0x2000040 + _inv1_phase_c_pwm_modulator__channels[0], ((X_UnInt32)((_inv1_phase_c_pwm_modulator__limited_in[0] - (-1.0)) * 4000.0)));
+    if (_enable__out == 0x0) {
+        // pwm_modulator_en
+        HIL_OutInt32(0x2000000 + _inv1_phase_c_pwm_modulator__channels[0], 0x0);
+    }
+    else {
+        // pwm_modulator_en
+        HIL_OutInt32(0x2000000 + _inv1_phase_c_pwm_modulator__channels[0], 0x1);
+    }
+    // 1
+    HIL_OutInt32(0x2000140, 0x4);
+//@cmp.out.block.end
+    //////////////////////////////////////////////////////////////////////////
+    // Update block
+    //////////////////////////////////////////////////////////////////////////
+    //@cmp.update.block.start
+    // Generated from the component: sin
+    _sin__current_phase[0] += 50.0 * 0.0001;
+    if (_sin__current_phase[0] >= 1.0f) {
+        _sin__current_phase[0] -= 1.0f;
+    }
+    _sin__current_phase[1] += 50.0 * 0.0001;
+    if (_sin__current_phase[1] >= 1.0f) {
+        _sin__current_phase[1] -= 1.0f;
+    }
+    _sin__current_phase[2] += 50.0 * 0.0001;
+    if (_sin__current_phase[2] >= 1.0f) {
+        _sin__current_phase[2] -= 1.0f;
+    }
+    //@cmp.update.block.end
+}
+// ----------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------

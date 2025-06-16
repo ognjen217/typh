@@ -1,0 +1,269 @@
+version = 4.2
+
+//
+// Saved by sw version: 2025.1 SP1
+//
+
+model "RC_filter" {
+    configuration {
+        hil_device = "HIL404"
+        hil_configuration_id = 1
+        simulation_method = exact
+        simulation_time_step = auto
+        simulation_discret_scaling = 1.0
+        dsp_timer_periods = 100e-6, 50e-3
+        ss_calc_method = "systematic elimination"
+        enb_pole_shift = True
+        enb_gds_oversampling = True
+        show_modes = False
+        device_ao_limit_enable = False
+        reset_analog_outputs_on_sim_stop = True
+        reset_analog_outputs_on_sim_stop_mode = Offset values
+        reset_digital_outputs_on_sim_stop = True
+        vhil_adio_loopback = False
+        cpl_stb = False
+        enb_dep_sw_detect = False
+        code_section = "internal memory"
+        data_section = "internal memory"
+        sys_sp_rate_1 = 0.0001
+        sys_sp_rate_2 = 0.05
+        sys_real_type_precision = "default"
+        user_real_type_precision = "default"
+        sys_cpu_optimization = "high"
+        user_cpu_optimization = "high"
+        user_cpu_part_option = "default"
+        matrix_based_reduction = True
+        cpl_dynamics_analysis = False
+        export_ss_to_pickle = False
+        ground_scope_core = False
+        dss_num_tol = 1e-15
+        cce_platform = "generic"
+        cce_use_relative_names = False
+        cce_type_mapping_real = "double"
+        cce_type_mapping_uint = "unsigned int"
+        cce_type_mapping_int = "int"
+        cce_platform = "generic"
+        cce_use_relative_names = False
+        cce_type_mapping_real = "double"
+        cce_type_mapping_uint = "unsigned int"
+        cce_type_mapping_int = "int"
+        cce_term_var_location = "local"
+        cce_directory = ""
+        cce_custom_type_int = ""
+        cce_custom_type_uint = ""
+        cce_custom_type_real = ""
+        tunable_params = "component defined"
+        sp_compiler_type = "C compiler"
+        sig_stim = "off"
+        export_resource_list = ""
+        export_dependency_list = ""
+        excluded_resource_list = ""
+        excluded_component_from_locking_list = ""
+        export_out_file = ""
+        export_lock_top_level = True
+        export_encrypt_library = True
+        export_encrypt_resources = True
+        solver_type = "DAE"
+        integration_method = "BDF"
+        max_sim_step = 1e-4
+        simulation_time = 0.1
+        abs_tol = 1e-3
+        rel_tol = 1e-3
+        init_sim_step = 1e-6
+        r_on_sw = 1e-3
+        v_on_diode = 0.2
+        data_sampling_rate = 0
+        feedthrough_validation_error_level = error
+    }
+
+    component Subsystem Root {
+        component "core/Voltage Measurement" Va1 {
+        }
+        [
+            position = 8228, 8224
+            rotation = right
+            size = 64, 32
+        ]
+
+        component "core/Scope" Scope1 {
+            selected_signals = "[\'C1\', \'Va1\']"
+            signals_data = "{\"signals\": {\"C1\": {\"viewports\": [1], \"type\": \"analog\", \"color\": {\"1\": \"#FF0000\"}, \"display\": {\"1\": \"solid\"}}, \"Va1\": {\"viewports\": [1], \"type\": \"analog\", \"color\": {\"1\": \"#00CC00\"}, \"display\": {\"1\": \"solid\"}}}, \"viewports\": {\"1\": {\"log_scale_x\": false, \"log_scale_y\": false, \"y_axis_db\": false}, \"2\": {\"log_scale_x\": false, \"log_scale_y\": false, \"y_axis_db\": false}, \"3\": {\"log_scale_x\": false, \"log_scale_y\": false, \"y_axis_db\": false}, \"4\": {\"log_scale_x\": false, \"log_scale_y\": false, \"y_axis_db\": false}}, \"plot_settings\": {\"layout\": \"Vertical\", \"background_color\": \"white\", \"legend_visible\": true}}"
+        }
+        [
+            position = 7924, 8104
+        ]
+
+        component "core/Voltage Measurement" Va2 {
+        }
+        [
+            position = 8480, 8224
+            rotation = right
+            size = 64, 32
+        ]
+
+        component "core/Variable Capacitor" C2 {
+        }
+        [
+            position = 8576, 8228
+            rotation = right
+            size = 64, 48
+        ]
+
+        component "core/SCADA Input" Capacitance {
+            unit = ""
+        }
+        [
+            position = 8096, 7988
+        ]
+
+        component "core/SCADA Input" Resistor {
+            unit = ""
+        }
+        [
+            position = 8096, 8056
+        ]
+
+        component "core/Variable Resistor" RL1 {
+        }
+        [
+            position = 8344, 8104
+            size = 64, 48
+        ]
+
+        component "core/Voltage Source" Vs1 {
+            init_rms_value = "24"
+            init_source_nature = "Sine"
+        }
+        [
+            position = 8088, 8224
+            rotation = right
+        ]
+
+        junction Junction13 pe
+        [
+            position = 8480, 8348
+        ]
+
+        junction Junction14 pe
+        [
+            position = 8484, 8104
+        ]
+
+        junction Junction15 pe
+        [
+            position = 8228, 8104
+        ]
+
+        junction Junction16 pe
+        [
+            position = 8228, 8348
+        ]
+
+        connect Capacitance.out C2.In as Connection58
+        connect Va2.n_node Junction13 as Connection66
+        connect C2.n_node Junction13 as Connection68
+        connect C2.p_node Junction14 as Connection71
+        connect Junction14 Va2.p_node as Connection72
+        [
+            breakpoints = 8480, 8104
+        ]
+        connect RL1.n_node Junction14 as Connection73
+        connect RL1.In Resistor.out as Connection77
+        [
+            breakpoints = 8120, 8056
+        ]
+        connect RL1.p_node Junction15 as Connection88
+        connect Junction15 Va1.p_node as Connection89
+        [
+            breakpoints = 8228, 8104; 8228, 8116
+        ]
+        connect Vs1.p_node Junction15 as Connection90
+        connect Va1.n_node Junction16 as Connection91
+        connect Junction16 Junction13 as Connection92
+        [
+            breakpoints = 8480, 8348
+        ]
+        connect Vs1.n_node Junction16 as Connection93
+    }
+
+    default {
+        "core/SCADA Input" {
+            signal_access = "inherit"
+            addr = "0"
+            format = "real"
+            override_signal_name = "False"
+            signal_name = ""
+            signal_type = "real"
+            min = "-1e6"
+            max = "1e6"
+            def_value = "0"
+            unit = " "
+            execution_rate = "100e-6"
+        }
+
+        "core/Scope" {
+            signals_data = "{}"
+            selected_signals = "[]"
+        }
+
+        "core/Voltage Source" {
+            sig_input = "False"
+            type = "signal generator"
+            param_set = "1phase"
+            parent_label = ""
+            dtsm_switch_name = ""
+            addr = "0"
+            spc_nb = "0"
+            execution_rate = "100e-6"
+            cpd_visible = "True"
+            enable_snb = "False"
+            snb_type = "R2"
+            R2 = "0.0"
+            L1 = "0.1"
+            override_signal_name = "False"
+            signal_name = ""
+            init_source_nature = "Constant"
+            init_const_value = "0.0"
+            init_rms_value = "0.0"
+            init_frequency = "50.0"
+            init_phase = "0.0"
+        }
+
+        "core/Variable Capacitor" {
+            initial_charge = "0"
+            enb_resistance = "True"
+            resistance = "0.01"
+            hide_int_meas = "False"
+        }
+
+        "core/Variable Resistor" {
+            inductance = "1e-3"
+            initial_current = "0.0"
+            hide_int_meas = "False"
+        }
+
+        "core/Voltage Measurement" {
+            signal_access = "inherit"
+            bw_limit = "False"
+            frequency = "10e3"
+            comparator_enable = "False"
+            operator = "greater"
+            threshold = "0"
+            cmp_abs_value = "False"
+            feed_forward = "false"
+            sig_output = "False"
+            sig_output_filt_and_full_bw = "False"
+            execution_rate = "100e-6"
+            addr = "0"
+            nd_msr_estimation = "false"
+            dev_cpl_msr = "false"
+            host_device = "0"
+            output_to_device = "0"
+            dev_cpl_index = "0"
+            dev_cpl_var_nb = "0"
+            visible = "True"
+            override_signal_name = "False"
+            signal_name = ""
+        }
+    }
+}
